@@ -3,9 +3,26 @@
   "editor.formatOnSave": true,
   "cSpell.words": [
     "dprint",
-    "kemal"
+    "kemal",
+    "kemalcr"
   ],
   "crystal-lang.completion": true,
-  "crystal-lang.hover": true
-  // "crystal-lang.server": /absolute/path/bin/crystalline"
+  "crystal-lang.hover": true,
+  // "crystal-lang.server": /absolute/path/bin/crystalline"m
+  "yaml.format.enable": true,
+  "yaml.format.singleQuote": true,
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "gitlens.codeLens.scopes": [
+      "document"
+    ],
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }
