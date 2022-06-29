@@ -6,6 +6,6 @@
     "kemal"
   ],
   "crystal-lang.completion": true,
-  "crystal-lang.hover": true,
+  "crystal-lang.hover": true
   // "crystal-lang.server": /absolute/path/bin/crystalline"
 }
