@@ -1,0 +1,45 @@
+@import 'https://fonts.bunny.net/css?family=alice:400';
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #333631;
+  height: 100%;
+}
+
+a {
+  color: #a86f4c;
+  text-decoration: none;
+}
+
+#index {
+  height: 100%;
+  text-align: center;
+}
+
+.main {
+  height: 95%;
+  display: grid;
+  grid-template:
+    '_main-noop-head' 40%
+    'main-links' 60%;
+  text-align: center;
+  font-size: large;
+  font-family: Alice, sans-serif;
+}
+
+.main-links {
+  grid-area: main-links;
+  list-style: none;
+}
+
+.footer {
+  max-height: 5%;
+  font-size: x-small;
+  position: sticky;
+  top: 100%;
+  margin-right: 0.2rem;
+  text-align: right;
+}
