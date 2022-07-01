@@ -4,5 +4,6 @@
     "github>kachick/renovate-config-dprint"
   ],
   "labels": ["dependencies", "renovate"],
-  "automerge": true
+  "automerge": true,
+  "enabledManagers": ["regex"]
 }
