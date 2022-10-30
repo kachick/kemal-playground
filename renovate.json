@@ -6,5 +6,7 @@
   ],
   "labels": ["dependencies", "renovate"],
   "automerge": true,
+  "automergeType": "pr",
+  "platformAutomerge": true,
   "enabledManagers": ["regex"]
 }
