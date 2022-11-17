@@ -8,7 +8,8 @@ targets:
   sandbox-crystal-kemal:
     main: src/sandbox-crystal-kemal.cr
 
-crystal: 1.4.1
+# TODO: Sync with .tool-versions
+crystal: 1.6.2
 
 license: MIT
 
