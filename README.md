@@ -14,7 +14,7 @@ Resolving dependencies
 
 ```console
 > just dev
-[development] Kemal is ready to lead at http://0.0.0.0:3000
+[development] Kemal is ready to lead at http://127.0.0.1:3000
 ```
 
-Go to <http://localhost:3000> (Not <http://0.0.0.0:3000/> in WSL2)
+Go to <http://127.0.0.1:3000>

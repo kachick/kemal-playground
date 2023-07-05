@@ -15,4 +15,6 @@ module Kemal::Sandbox
   end
 end
 
+# http://0.0.0.0:3000/ does not accept the connection in WSL2
+Kemal.config.host_binding = "localhost"
 Kemal.run
