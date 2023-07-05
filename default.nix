@@ -13,5 +13,6 @@ pkgs.mkShell {
     pkgs.nil
     pkgs.nixpkgs-fmt
     pkgs.just
+    pkgs.postgresql
   ];
 }
