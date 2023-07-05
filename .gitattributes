@@ -1,2 +1,3 @@
 *.ecr linguist-language=Crystal
 public/* linguist-vendored
+justfile linguist-language=Makefile
