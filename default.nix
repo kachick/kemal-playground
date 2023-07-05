@@ -12,5 +12,6 @@ pkgs.mkShell {
     pkgs.dprint
     pkgs.nil
     pkgs.nixpkgs-fmt
+    pkgs.just
   ];
 }

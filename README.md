@@ -13,7 +13,7 @@ Resolving dependencies
 ## Usage
 
 ```console
-> crystal run src/kemal-sandbox.cr
+> just dev
 [development] Kemal is ready to lead at http://0.0.0.0:3000
 ```
 
