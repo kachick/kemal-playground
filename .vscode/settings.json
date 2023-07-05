@@ -1,6 +1,12 @@
 {
   "editor.defaultFormatter": "dprint.dprint",
   "editor.formatOnSave": true,
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide"
+  },
+  "[crystal]": {
+    "editor.defaultFormatter": "crystal-lang-tools.crystal-lang"
+  },
   "cSpell.words": [
     "dprint",
     "kemal",
@@ -8,21 +14,5 @@
   ],
   "crystal-lang.completion": true,
   "crystal-lang.hover": true,
-  // "crystal-lang.server": /absolute/path/bin/crystalline"m
-  "yaml.format.enable": true,
-  "yaml.format.singleQuote": true,
-  "[yaml]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "keep",
-    "gitlens.codeLens.scopes": [
-      "document"
-    ],
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  "crystal-lang.server": "/nix/store/7jcl9ryzxi8ki1l3vjrbynwimyjxl6dc-crystalline-0.9.0/bin/crystalline"
 }

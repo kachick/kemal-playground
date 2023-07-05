@@ -4,6 +4,8 @@
     "redhat.vscode-yaml",
     "editorconfig.editorconfig",
     "streetsidesoftware.code-spell-checker",
-    "dprint.dprint"
+    "dprint.dprint",
+    "veelenga.crystal-ameba",
+    "jnoortheen.nix-ide"
   ]
 }
