@@ -1,0 +1,2 @@
+*.ecr linguist-vendored
+public/* linguist-vendored
