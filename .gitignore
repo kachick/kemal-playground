@@ -5,3 +5,4 @@
 *.dwarf
 
 postgres/
+postgresql.log

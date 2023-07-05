@@ -2,7 +2,7 @@
 <% todos.each do |todo| %>
 <ul>
   <li>
-    <%=todo["done"]? %><%=todo["title"]? %>
+    <%=todo.id %> - <%=todo.done %> - <%=todo.subject %>
   </li>
 </ul>
 <% end %>
