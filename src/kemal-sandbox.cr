@@ -1,16 +1,18 @@
 require "kemal"
 
-static_headers do |response, filepath, filestat|
-  if filepath =~ /\.html$/
-    response.headers.add("Access-Control-Allow-Origin", "*")
+module Kemal::Sandbox
+  static_headers do |response, filepath, filestat|
+    if filepath =~ /\.html$/
+      response.headers.add("Access-Control-Allow-Origin", "*")
+    end
+    response.headers.add("Content-Size", filestat.size.to_s)
   end
-  response.headers.add("Content-Size", filestat.size.to_s)
-end
 
-serve_static({"gzip" => true, "dir_listing" => false})
+  serve_static({"gzip" => true, "dir_listing" => false})
 
-get "/" do
-  "Hello World!"
+  get "/" do
+    "Hello World!"
+  end
 end
 
 Kemal.run
