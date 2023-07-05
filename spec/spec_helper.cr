@@ -1,2 +1,2 @@
 require "spec"
-require "../src/sandbox-crystal-kemal"
+require "../src/kemal-sandbox"

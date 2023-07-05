@@ -1,12 +1,12 @@
-name: sandbox-crystal-kemal
+name: kemal-sandbox
 version: 0.1.0
 
 authors:
   - Kenichi Kamiya <kachick1@gmail.com>
 
 targets:
-  sandbox-crystal-kemal:
-    main: src/sandbox-crystal-kemal.cr
+  kemal-sandbox:
+    main: src/kemal-sandbox.cr
 
 # TODO: Sync with .tool-versions
 crystal: 1.6.2

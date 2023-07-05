@@ -1,6 +1,6 @@
 require "./spec_helper"
 
-describe Sandbox::Crystal::Kemal do
+describe Kemal::Sandbox do
   # TODO: Write tests
 
   it "works" do

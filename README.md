@@ -1,4 +1,4 @@
-# sandbox-crystal-kemal
+# kemal-sandbox
 
 My sandbox for https://github.com/kemalcr/kemal
 
@@ -13,7 +13,7 @@ Resolving dependencies
 ## Usage
 
 ```console
-$ crystal run src/sandbox-crystal-kemal.cr
+$ crystal run src/kemal-sandbox.cr
 [development] Kemal is ready to lead at http://0.0.0.0:3000
 ```
 
