@@ -1,2 +1,2 @@
-*.ecr linguist-vendored
+*.ecr linguist-language=Crystal
 public/* linguist-vendored
