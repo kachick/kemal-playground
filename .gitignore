@@ -6,3 +6,4 @@
 
 postgres/
 postgresql.log
+.direnv/
