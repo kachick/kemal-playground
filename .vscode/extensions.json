@@ -1,7 +1,7 @@
 {
   "recommendations": [
     "crystal-lang-tools.crystal-lang",
-    "redhat.vscode-yaml",
+    "github.vscode-github-actions",
     "editorconfig.editorconfig",
     "dprint.dprint",
     "veelenga.crystal-ameba",
