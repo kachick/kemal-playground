@@ -13,7 +13,8 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-      in {
+      in
+      {
         formatter = pkgs.nixpkgs-fmt;
         devShells.default = with pkgs;
           mkShell {
