@@ -32,6 +32,7 @@
               nil
               just
               postgresql
+              typos
             ];
           };
       });

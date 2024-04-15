@@ -7,11 +7,6 @@
   "[crystal]": {
     "editor.defaultFormatter": "crystal-lang-tools.crystal-lang"
   },
-  "cSpell.words": [
-    "dprint",
-    "kemal",
-    "kemalcr"
-  ],
   "crystal-lang.completion": true,
   "crystal-lang.hover": true,
   "crystal-lang.server": "/nix/store/7jcl9ryzxi8ki1l3vjrbynwimyjxl6dc-crystalline-0.9.0/bin/crystalline"

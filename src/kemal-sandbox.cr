@@ -64,7 +64,7 @@ module Kemal::Sandbox
   end
 
   get "/todos/:id/edit" do |env|
-    # TOOD: Implement here
+    # TODO: Implement here
   end
 
   post "/todos" do |env|
