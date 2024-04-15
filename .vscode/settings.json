@@ -9,5 +9,5 @@
   },
   "crystal-lang.completion": true,
   "crystal-lang.hover": true,
-  "crystal-lang.server": "/nix/store/7jcl9ryzxi8ki1l3vjrbynwimyjxl6dc-crystalline-0.9.0/bin/crystalline"
+  "crystal-lang.server": "/nix/store/cfx6dj1bi6a3h6zl20gzapg8yf0q99gh-crystalline-0.10.0/bin/crystalline"
 }
