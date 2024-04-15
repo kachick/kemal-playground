@@ -1,9 +1,8 @@
 {
   "recommendations": [
     "crystal-lang-tools.crystal-lang",
-    "redhat.vscode-yaml",
+    "github.vscode-github-actions",
     "editorconfig.editorconfig",
-    "streetsidesoftware.code-spell-checker",
     "dprint.dprint",
     "veelenga.crystal-ameba",
     "jnoortheen.nix-ide"
