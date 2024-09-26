@@ -43,6 +43,8 @@
               just
               postgresql
               typos
+
+              # Attempt to use rainfrog after it has binary cache - https://github.com/NixOS/nixpkgs/pull/342487
             ];
           };
       }
