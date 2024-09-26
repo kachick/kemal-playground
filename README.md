@@ -4,8 +4,9 @@ My sandbox for <https://github.com/kemalcr/kemal>
 
 ## Setup
 
+Use direnv and Nix flake
+
 ```console
-> nix-shell
 > shards install
 Resolving dependencies
 ```
@@ -13,6 +14,8 @@ Resolving dependencies
 ## Usage
 
 ```console
+> just db-start
+> just db-migrate
 > just dev
 [development] Kemal is ready to lead at http://127.0.0.1:3000
 ```
