@@ -35,11 +35,7 @@ module Kemal::Sandbox
       end
     end
 
-    if todos.empty?
-      render "src/views/error.ecr"
-    else
-      render "src/views/index.ecr", "src/views/application.ecr"
-    end
+    render "src/views/index.ecr", "src/views/application.ecr"
   end
 
   get "/new" do

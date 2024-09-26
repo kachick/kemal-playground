@@ -2,7 +2,11 @@
 <% todos.each do |todo| %>
 <ul>
   <li>
-    <%=todo.id %> - <%=todo.done %> - <%=todo.subject %>
+    <a href="/todos/<%=todo.id %>"><%=todo.id %></a> - <%=todo.done %> - <%=todo.subject %>
   </li>
 </ul>
 <% end %>
+
+<footer>
+  Registered <%=todos.size %> items. <a href="/new">Want to add new one?</a>
+</footer>
