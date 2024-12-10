@@ -12,11 +12,11 @@ module Kemal::Sandbox
 
   database_url = "postgres://kachick@localhost:5432/postgres"
 
-  static_headers do |response, filepath, filestat|
+  static_headers do |context, filepath, filestat|
     if filepath =~ /\.html$/
-      response.headers.add("Access-Control-Allow-Origin", "*")
+      context.response.headers.add("Access-Control-Allow-Origin", "*")
     end
-    response.headers.add("Content-Size", filestat.size.to_s)
+    context.response.headers.add("Content-Size", filestat.size.to_s)
   end
 
   serve_static({"gzip" => true, "dir_listing" => false})

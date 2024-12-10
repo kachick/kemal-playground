@@ -4,10 +4,19 @@
   "[nix]": {
     "editor.defaultFormatter": "jnoortheen.nix-ide"
   },
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nil",
+  "nix.serverSettings": {
+    "nil": {
+      "formatting": {
+        "command": ["nixfmt"]
+      }
+    }
+  },
   "[crystal]": {
     "editor.defaultFormatter": "crystal-lang-tools.crystal-lang"
   },
   "crystal-lang.completion": true,
   "crystal-lang.hover": true,
-  "crystal-lang.server": "/nix/store/q6bnbgcvkibhm4kwjnbb3p75jj02w2gc-crystalline-0.13.1/bin/crystalline"
+  "crystal-lang.server": "/nix/store/83jziparqza7wp41p7jm3sq8c2lhfmlp-crystalline-0.15.0/bin/crystalline" // Apply selfup
 }
