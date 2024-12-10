@@ -1,4 +1,4 @@
-# kemal-sandbox
+# kemal-playground
 
 My sandbox for <https://github.com/kemalcr/kemal>
 

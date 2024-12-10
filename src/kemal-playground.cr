@@ -2,7 +2,7 @@ require "kemal"
 require "db"
 require "pg"
 
-module Kemal::Sandbox
+module Kemal::Playground
   struct Todo
     property id, subject, done
 

@@ -1,12 +1,12 @@
-name: kemal-sandbox
+name: kemal-playground
 version: 0.1.0
 
 authors:
   - Kenichi Kamiya <kachick1@gmail.com>
 
 targets:
-  kemal-sandbox:
-    main: src/kemal-sandbox.cr
+  kemal-playground:
+    main: src/kemal-playground.cr
 
 crystal: 1.14.0
 

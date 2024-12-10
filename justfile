@@ -1,7 +1,7 @@
 default: dev
 
 dev:
-  crystal run src/kemal-sandbox.cr
+  crystal run src/kemal-playground.cr
 
 # https://github.com/NixOS/nixpkgs/issues/83770
 # https://stackoverflow.com/a/74986582/1212807
