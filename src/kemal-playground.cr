@@ -27,10 +27,10 @@ module Kemal::Playground
 
   get "/" do
     todos = [] of Todo
-    DB.open(database_url) do |db|
-      db.query("select id, subject, done from todos") do |rs|
-        rs.each do
-          todos << Todo.new(*rs.read(UUID, String, Bool))
+    DB.open(database_url) do |database|
+      database.query("select id, subject, done from todos") do |results|
+        results.each do
+          todos << Todo.new(*results.read(UUID, String, Bool))
         end
       end
     end
@@ -48,8 +48,8 @@ module Kemal::Playground
       render "src/views/error.ecr"
     end
 
-    todo = DB.open(database_url) do |db|
-      Todo.new(*db.query_one("select id, subject, done from todos where id = $1::uuid", id, as: {UUID, String, Bool}))
+    todo = DB.open(database_url) do |database|
+      Todo.new(*database.query_one("select id, subject, done from todos where id = $1::uuid", id, as: {UUID, String, Bool}))
     end
 
     if todo
@@ -59,7 +59,7 @@ module Kemal::Playground
     end
   end
 
-  get "/todos/:id/edit" do |env|
+  get "/todos/:id/edit" do |_|
     # TODO: Implement here
   end
 
@@ -68,8 +68,8 @@ module Kemal::Playground
     done = env.params.body["done"] == "on"
     puts [subject, done]
 
-    DB.open(database_url) do |db|
-      db.exec("insert into todos(subject, done) values($1::text, $2::boolean)", subject, done)
+    DB.open(database_url) do |database|
+      database.exec("insert into todos(subject, done) values($1::text, $2::boolean)", subject, done)
     end
 
     env.redirect "/"
@@ -78,4 +78,4 @@ end
 
 # http://0.0.0.0:3000/ does not accept the connection in WSL2
 Kemal.config.host_binding = "localhost"
-Kemal.run
+Kemal.run unless ENV["KEMAL_ENV"]? == "test"

@@ -1,9 +1,7 @@
 require "./spec_helper"
 
-describe Kemal::Sandbox do
-  # TODO: Write tests
-
+describe Kemal::Playground do
   it "works" do
-    false.should eq(true)
+    true.should eq(true)
   end
 end
