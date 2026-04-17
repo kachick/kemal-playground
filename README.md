@@ -1,6 +1,6 @@
 # kemal-playground
 
-My sandbox for <https://github.com/kemalcr/kemal>
+This repository was for learning Kemal basics. I no longer maintain this project.
 
 ## Setup
 
