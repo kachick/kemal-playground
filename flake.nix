@@ -1,24 +1,19 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
-    selfup = {
-      url = "github:kachick/selfup/v1.1.8";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
   };
 
   outputs =
     {
       self,
       nixpkgs,
-      selfup,
     }:
     let
       inherit (nixpkgs) lib;
       forAllSystems = lib.genAttrs lib.systems.flakeExposed;
     in
     {
-      formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.nixfmt-rfc-style);
+      formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.nixfmt-tree);
       devShells = forAllSystems (
         system:
         let
@@ -30,30 +25,28 @@
             # See https://github.com/crystal-lang-tools/vscode-crystal-lang/pull/209 for detail
             CRYSTAL_LSP_PATH = lib.getExe pkgs.crystalline;
 
-            buildInputs =
-              (with pkgs; [
-                bashInteractive
-                findutils # xargs
-                nixfmt-rfc-style
-                nil
+            buildInputs = with pkgs; [
+              bashInteractive
+              findutils # xargs
+              nixfmt
+              nixfmt-tree
+              nixd
 
-                crystal_1_14
-                crystalline
-                ameba
-                shards
-                pcre
-                openssl
-                pkg-config
-                dprint
-                nil
-                just
-                postgresql
-                rainfrog
+              crystal
+              crystalline
+              ameba
+              shards
+              pcre
+              openssl
+              pkg-config
+              dprint
+              just
+              postgresql
+              rainfrog
 
-                dprint
-                typos
-              ])
-              ++ [ selfup.packages.${system}.default ];
+              dprint
+              typos
+            ];
           };
         }
       );
